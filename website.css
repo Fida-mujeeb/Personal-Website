@@ -1,0 +1,373 @@
+/* ----------------------html all----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "poppins",sans-serif;
+}
+:root{
+    --bg-color:#f9f9f9;
+    --second-bg-color:#efefee;
+    --text-color:black;
+    --main-color:#cb612b;
+
+ }
+ html{
+    font-size: 80%;
+    overflow-x:hidden ;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+/* -----------------------NAVBAR------------------------------------ */
+.header{
+    position: fixed;
+     top:0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background-color: rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(255,255,255,0.25); 
+    backdrop-filter: blur(10px); 
+    z-index: 100;
+}
+.navbar-brand{ 
+    font-size: 2rem;
+    /* color: var(--text-color); */
+    font-weight: 750;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.navbar-brand:hover{
+    transform: scale(1.1);
+}
+#navbarNav a{
+    font-size: 1.5rem;
+     color: black;
+     margin-left: 4rem;
+     font-weight: 500;
+     transition: 0.3s ease;
+     border-bottom: 3px solid transparent;
+}
+#navbarNav a:hover,
+#navbarNav a:active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+.home-img img{
+    position: relative;
+    /* left: 30%; */
+    top: 10rem;
+    width: 33vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.home-content{
+    margin-top: 15rem;
+}
+.home-content h3{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+    font-size: 3rem;
+ }
+ .home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    top: 4rem;
+    width: 800;
+}
+span{
+    color: var(--main-color);
+    font-weight: 200;
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 1rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+.social-icons a:hover{
+    color: white;
+    transform: scale(1.3)translateY(-5px);
+    background-color: var(--main-color);
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background-color: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1rem;
+    color: white;
+    border: 1.5px  solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    transition:0.3s ease;
+    cursor: pointer;
+}
+.btn:hover
+{
+    transform: scale(1.05);
+    background: var(--bg-color);
+    color: var(--main-color);
+    border: 1.5px solid var(--main-color);
+
+}
+/*----------------------about------------------------------*/
+.about{
+    background-color: var(--second-bg-color);
+    margin-top: 10px;
+}
+.about-img img {
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+}
+
+.about-content {
+    padding-left: 50px; /* Adjust spacing */
+}
+
+.heading span {
+    color: var(--main-color); /* Adjust color */
+}
+
+.btn-primary {
+    background-color: var(--main-color); /* Adjust color */
+    border-color: var(--main-color); /* Adjust color */
+}
+
+.btn-primary:hover {
+    background-color:white; /* Adjust color */
+    border-color:var(--main-color); /* Adjust color */
+}
+
+
+/* ---------------------skill------------------------------ */
+.skills h2{
+    margin-bottom: 0.5rem;
+    font-size: 25px;
+}
+.skills{
+    margin: 0 auto;
+}
+.skill-bar{
+    padding: 25px 30px ;
+    background-color: white;
+    border: 1.5px solid rgb(235,235,235);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.skill-bar .bar{
+    margin: 20px 0;
+}
+.skill-bar .bar:first-child{
+   margin-top: 0px;
+}
+.skill-bar .bar .info{
+    margin-bottom: 5px;
+}
+.skill-bar .bar .info span{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+}
+.skill-bar .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background:var(--second-bg-color);
+    position: relative;
+    border-radius: 10px;
+}
+.bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+}
+.bar .progress-line.html span{
+    width: 100%;
+    background-color: rgb(232, 151, 75);
+}
+.bar .progress-line.css span{
+    width: 100%;
+    background-color:rgb(232, 151, 75);
+}
+.bar .progress-line.javascript span{
+    width: 90%;
+    background-color:rgb(232, 151, 75);
+}
+.bar .progress-line.php span{
+    width: 50%;
+    background-color:rgb(232, 151, 75);
+}
+.bar .progress-line.python span{
+    width: 80%;
+    background-color:rgb(232, 151, 75);
+}
+
+/* ---------------------projects--------------------------- */
+.projects {
+    background-color: #f8f9fa; /* Background color for the projects section */
+    padding: 30px 0; /* Add padding as needed */
+}
+
+.projects .heading {
+    text-align: center; /* Center align the heading */
+    margin-bottom: 50px; /* Add space below the heading */
+}
+
+.projects-box {
+    border: 2px solid var(--main-color); /* Border color for the project boxes */
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+    transition: all 0.3s ease; /* Add transition effect */
+}
+
+.projects-box:hover {
+    transform: translateY(-10px); /* Move box up on hover */
+}
+
+.projects-info {
+    padding: 20px; /* Add padding to the project information */
+}
+
+.projects-info h4 {
+    margin-bottom: 15px; /* Add space below the project title */
+}
+
+.projects-info p {
+    margin-bottom: 15px; /* Add space below the project description */
+}
+
+.projects-info img {
+    width: 100%; /* Make image responsive */
+    border-top: 1px solid #dee2e6; /* Add border to separate image from project information */
+}
+
+/* --------------------contact----------------------------- */
+.contact{
+    background-color: var(--second-bg-color);
+}
+.contact h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: black;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.contact .form-control{
+    border: 2px solid var(--main-color);
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 0.8rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+.contact form btn{
+    margin-top: 2rem;
+}
+
+/* --------------------footer------------------------------ */
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding:40px 0 ;
+    background-color: var(--second-bg-color);
+}
+.footer .social{
+  text-align: center;
+  padding-bottom: 25px;
+  color:var(--main-color);
+}
+.footer .social a{
+    padding-bottom: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color:var(--second-bg-color);
+    color: var(--main-color);
+}
+.footer ul{
+    margin-top:0 ;
+    padding: 0;
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color:var(--main-color);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul link a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--main-color);
+
+}
+/*-------------------------scroll---------------- */
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width: 50px;
+}
